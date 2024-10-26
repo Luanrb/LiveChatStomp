@@ -1,5 +1,5 @@
 const stompClient = new StompJs.Client({
-    brokerURL: 'ws://' + window.location.host + '/luan-livechatstomp-websocket'
+    brokerURL: 'wss://' + window.location.host + '/luan-livechatstomp-websocket'
 });
 
 stompClient.onConnect = (frame) => {
